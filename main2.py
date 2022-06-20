@@ -61,7 +61,7 @@ def non_max_suppression_fast(boxes, overlapThresh):
 
 
 def main():
-    cap = cv2.VideoCapture('test_video.mp4')
+    cap = cv2.VideoCapture('http://10.10.222.254:6677/videofeed?username=&password=')
 
     fps_start_time = datetime.datetime.now()
     fps = 0

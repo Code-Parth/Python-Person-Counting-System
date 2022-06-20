@@ -1,17 +1,3 @@
-# import cv2
-
-# cap = cv2.VideoCapture('http://10.10.222.254:6677/videofeed?username=&password=')
-
-# while True:
-#     ret, frame = cap.read()
-#     cv2.imshow("Capturing",frame)
-
-#     if cv2.waitKey(1) & 0xFF == ord('x'):
-#         break
-
-# cap.release()
-# cv2.destroyAllWindows()
-
 import cv2
 import datetime
 import imutils
@@ -20,10 +6,6 @@ import numpy as np
 protopath = "MobileNetSSD_deploy.prototxt"
 modelpath = "MobileNetSSD_deploy.caffemodel"
 detector = cv2.dnn.readNetFromCaffe(prototxt=protopath, caffeModel=modelpath)
-# Only enable it if you are using OpenVino environment
-# detector.setPreferableBackend(cv2.dnn.DNN_BACKEND_INFERENCE_ENGINE)
-# detector.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
-
 
 CLASSES = ["background", "aeroplane", "bicycle", "bird", "boat",
            "bottle", "bus", "car", "cat", "chair", "cow", "diningtable",

@@ -14,7 +14,8 @@ CLASSES = ["background", "aeroplane", "bicycle", "bird", "boat",
 
 
 def main():
-    cap = cv2.VideoCapture('http://10.10.222.254:6677/videofeed?username=&password=')
+    # cap = cv2.VideoCapture('http://10.10.222.254:6677/videofeed?username=&password=')
+    cap = cv2.VideoCapture('http://127.0.0.1:5500/Video.mp4')
 
     fps_start_time = datetime.datetime.now()
     fps = 0
